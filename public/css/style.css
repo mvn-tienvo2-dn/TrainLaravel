@@ -1,0 +1,451 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{ vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{  vertical-align:top;}/* vertical align top */
+nav.vertical ul li{ display:block;}/* vertical menu */
+nav.horizontal ul li{   display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+    body{
+
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+    background: url(../img/bg.jpg) no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+body a{
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+ ul{
+    padding: 0;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    margin:0;
+    padding:0;
+}
+p{
+    padding: 0;
+    margin: 0;
+    color:#999;
+}
+  a:link{
+                color: blue;
+                text-decoration: none;
+            }
+
+            a:visited{
+                color: white;
+                text-decoration: underline;
+            }
+
+            a:hover{
+                color: red;
+                text-decoration: underline;
+                background-color: blue;
+            }
+
+            a:active{
+                color: white;
+                text-decoration: none;
+            }
+.container {
+    position: relative;
+    text-align: center;
+}
+.main {
+    position: absolute;
+    top: 40%;
+    width: 60%;
+    margin: 0 auto;
+    left: 19%;
+}
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 20px 50px 16px 50px;
+    outline: none;
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+    margin: 14px 0px;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #fff;
+    background: transparent;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius:5px;
+    -o-border-radius: 5px;
+
+}
+input[type="submit"] {
+    padding: 14px 30px;
+    font-size: 1em;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius:30px;
+    -o-border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: #2dde98;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    margin: 24px auto;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+input[type="submit"]:hover {
+    background: #ff4f81;
+    color: #fff;
+    transition:0.5s all;
+    -webkit-transition:0.5s all;
+    -o-transition:0.5s all;
+    -moz-transition:0.5s all;
+    -ms-transition:0.5s all;
+}
+input[type="text"] {
+    background:  rgba(0, 0, 0, 0.55) url(../images/user.png) no-repeat 10px 10px;
+}
+input[type="password"] {
+    background:  rgba(0, 0, 0, 0.55) url(../images/lock.png) no-repeat 10px 10px;
+}
+.rg-main input[type="submit"] {
+    margin: 27px auto 31px;
+}
+::-webkit-input-placeholder{
+    color:rgba(255, 255, 255, 0.65);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: rgba(255, 255, 255, 0.65); 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: rgba(255, 255, 255, 0.65);  
+}
+
+:-ms-input-placeholder {  
+   color: rgba(255, 255, 255, 0.65);  
+}
+.rg-main h1 {
+    color: #fff;
+    font-size: 29px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.rg-main h1 span {
+    padding: 0 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+.rg-main{
+    width: 100%;
+    margin: 0 auto;
+    background:rgba(0, 0, 0, 0.53);
+    text-align: center;
+}
+.rg-main{
+    padding: 14px 35px 14px;
+}
+@media(max-width: 1920px){
+    h1.logo-w3 {
+        margin: 10% 0 5%;
+    }
+    
+}
+@media(max-width: 1680px){
+    h1.logo-w3 {
+        margin: 7% 0 5%;
+    }
+    
+}
+@media(max-width: 1600px){
+    h1.logo-w3 {
+        margin: 5% 0;
+    }
+    
+}
+@media(max-width: 1440px){
+    .rg-main {
+        padding: 40px 40px;
+    }
+    .rg-main {
+        width: 45%;
+    }
+    h1.logo-w3 {
+        font-size: 2.8em;
+    }
+}
+@media(max-width: 1366px){
+    .main {
+        width: 80%;
+        left: 10%;
+    }
+    .rg-main {
+        width: 60%;
+    }
+    h1.logo-w3 {
+        font-size: 2.7em;
+    }
+    .footer-w3l p {
+        margin: 3em 0em 2em;
+    }
+}
+@media(max-width: 1280px){
+    h1.logo-w3 {
+        font-size: 2.8em;
+    }
+    .main {
+        width: 71%;
+        left: 15%;
+    }
+    .footer-w3l p {
+        margin: 4.5em 0em 0em;
+    }
+}
+@media(max-width: 1080px){
+    h1.logo-w3 {
+        font-size: 2.7em;
+        letter-spacing: 3px;
+    }
+    .rg-main h2, .rg-main2 h3 {
+        font-size: 27px;
+    }
+    .rg-main {
+        width: 50%;
+    }
+}
+@media(max-width: 1050px){
+    .rg-main {
+        width: 48%;
+    }
+    
+}
+@media(max-width: 1024px){
+    h1.logo-w3 {
+        font-size: 2.6em;
+    }
+    .rg-main h2, .rg-main2 h3 {
+        font-size: 26px;
+    }
+    
+    .rg-main {
+        width: 53%;
+    }
+    .footer-w3l p {
+        margin: 2em 0em;
+    }
+}
+@media(max-width: 991px){
+    h1.logo-w3 {
+        font-size: 2.5em;
+        margin: 4% 0;
+    }
+    .rg-main h2, .rg-main2 h3 {
+        font-size: 25px;
+    }
+    
+    input[type="submit"] {
+        padding: 14px 30px;
+        font-size: .875em;
+    }
+}
+@media(max-width: 900px){
+    .rg-main {
+        width: 57%;
+    }   
+    input[type="text"], input[type="email"], input[type="password"] {
+        width: 73%;
+    }
+}
+@media(max-width: 800px){
+    .main {
+        width: 91%;
+        left: 4.5%;
+    }
+    h1.logo-w3 {
+        font-size: 2.4em;
+        letter-spacing: 2px;
+    }
+    .rg-main {
+        width: 53%;
+    }
+}
+@media(max-width: 768px){
+}
+@media(max-width: 736px){
+    h1.logo-w3 {
+        font-size: 2.3em;
+    }
+    .rg-main2 input[type="submit"] {
+        margin: 28px auto 31px;
+    }
+    .footer-w3l p {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    .rg-main h2 {
+        margin-bottom: 45px;
+    }
+}
+@media(max-width: 667px){
+    .rg-main {
+        width: 58%;
+    }
+    h1.logo-w3 {
+        font-size: 2em;
+        letter-spacing: 1px;
+    }
+    .rg-main h2, .rg-main2 h3 {
+        font-size: 23px;
+    }
+    input[type="text"], input[type="email"], input[type="password"] {
+        width: 74%;
+    }
+}
+@media(max-width: 640px){
+    
+    input[type="submit"] {
+        padding: 12px 30px;
+    }
+}
+@media(max-width: 600px){
+    .rg-main {
+        width: 62%;
+    }
+    input[type="text"], input[type="email"], input[type="password"] {
+        width: 72%;
+    }
+}
+@media(max-width: 568px){
+    .rg-main {
+        width: 65%;
+    }
+    .footer-w3l p {
+        line-height: 26px;
+    }
+}
+@media(max-width: 480px){
+    h1.logo-w3 {
+        font-size: 1.8em;
+    }
+    .rg-main h2, .rg-main2 h3 {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    input[type="submit"] {
+        font-size: 0.95em;
+    }
+    .rg-main {
+        width: 80%;
+    }
+}
+@media(max-width: 414px){
+    h1.logo-w3 {
+        font-size: 1.75em;
+        line-height: 1.4;
+    }
+    .rg-main {
+        width: 80%;
+    }
+    .rg-main {
+        padding: 40px 30px;
+    }
+    input[type="text"], input[type="email"], input[type="password"] {
+        width: 66%;
+    }
+    .rg-main h6 {
+        font-size: 15px;
+    }
+    ul.top-links li a i.fa {
+        height: 32px;
+        line-height: 34px;
+        width: 32px;
+        font-size: 14px;
+    }
+    input[type="submit"] {
+        font-size: 0.85em;
+        letter-spacing: 0px;
+    }
+    .footer-w3l p {
+        font-size: 14px;
+    }
+    input[type="text"], input[type="email"], input[type="password"] {
+        letter-spacing: 0px;
+    }
+    
+}
+@media(max-width: 384px){
+    .rg-main {
+        padding: 30px 20px;
+        width: 88%;
+    }
+}
+@media(max-width: 375px){
+    h1.logo-w3 {
+        font-size: 1.7em;
+    }
+    
+}
+@media(max-width: 320px){
+    h1.logo-w3 {
+        font-size: 1.55em;
+    }
+    .rg-main h2, .rg-main2 h3 {
+        font-size: 19px;
+        letter-spacing: 0px;
+    }
+    .rg-main {
+        width: 90%;
+        padding: 25px 15px;
+    }
+    .rg-main h6 {
+        font-size: 14px;
+        margin-top: 0px;
+    }
+    input[type="text"], input[type="text"], input[type="password"] {
+        width: 60%;
+    }
+    .footer p {
+        font-size: 13px;
+        margin: 2em 0em 1.5em;
+    }
+    input[type="text"] ,input[type="password"] {
+        background-size: 28px;
+        padding: 14px 50px 14px 50px;
+        font-size: 14px;
+    }
+}

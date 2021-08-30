@@ -1,0 +1,26 @@
+0% { color: red; } 
+ 50% { color: #fff;  } 
+ 100% { color: red;  } 
+ }
+ @-moz-keyframes my { 
+ 0% { color: red;  } 
+ 50% { color: #fff;  }
+ 100% { color: red;  } 
+ }
+ @-o-keyframes my { 
+ 0% { color: red; } 
+ 50% { color: #fff; } 
+ 100% { color: red;  } 
+ }
+ @keyframes my { 
+ 0% { color: red;  } 
+ 50% { color: #fff;  }
+ 100% { color: red;  } 
+ } 
+ .rounded-corners {	
+         font-weight:bold;
+ -webkit-animation: my 600ms infinite;
+ -moz-animation: my 600ms infinite; 
+ -o-animation: my 600ms infinite; 
+ animation: my 600ms infinite;
+}

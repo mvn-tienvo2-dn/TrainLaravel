@@ -1,0 +1,145 @@
+li.collapse navbar-collapse{
+	font-family: 'Montserrat',sans-serif;
+}
+ .collapse ul  li  a:hover {
+background-color: #00b38f;
+height:60px;
+width: 110px;
+border-color:#00b38f;
+width: cover;
+display: block;
+}
+#navbar  ul li{
+position: relative;
+list-style-type: none; 
+width: 110px;
+}
+#navbar  li:hover .sub-menu {
+ display: block;
+}
+#navbar{
+	border-bottom:solid 1px #fffff ; 
+}
+
+.sub-menu li a:hover {
+	background-color: #00b38f;
+	text-decoration: none;
+}
+.menu ul {
+	width: 110px;
+	background-color:#abc6cf;;
+}
+.menu li {
+	border-bottom:solid 1px #00b38f ; 
+	width: 110px;
+	height: 60px;
+	background-color:#abc6cf; 
+}
+
+#navbar .sub-menu{
+	position:absolute;
+	top: 60px;
+	bottom: 0px;
+	display: none;
+
+}
+#na-right{
+padding-right: 2px;
+}
+
+#nav-center{
+	margin-left: 100px;
+}
+.collapse li a{
+	height: 60px;
+	width: 110px;
+	padding: 10px;
+	text-align: center;  
+}
+.collapse{
+font-family: 'Noto Serif', serif;
+background-color: #abc6cf;
+
+}
+.nav navbar-nav navbar-right li a{
+    align-items: left;
+	}
+
+     .row{
+     	margin: 0px;
+     	padding: 0px;
+     } 
+     .product a {
+     	color: red;
+     	text-decoration: none;
+
+     }
+     .product a:hover{
+     	text-decoration: underline;
+     }  
+     .price {
+     	background-color: #e63900;
+        font-size: 16px;
+        color: white;
+        font-weight: bold;
+        border-radius: 5%;
+    -moz-border-radius: 5%;
+    -webkit-border-radius: 5%;
+
+     }  
+  #frame-product{
+  	background-color: #f5f5f0;
+  	text-align:center;
+  }   
+  .rounded-corners{
+  	right: 0;
+  	top: 10px;
+  	color: white;
+    width: 25px;
+    height: 20px;
+    border: solid 1px red;
+    background: red;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    position: absolute;
+} 
+.container-img{
+  position: relative;
+  width: 50%;
+ 
+ }
+
+.image {
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ffff1a;
+}
+.container-image:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+} 

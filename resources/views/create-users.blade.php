@@ -23,10 +23,21 @@
 				<input type="password" required name="password" class="form-control">
 			</div>
 			<div class="form-group">
-				<input type="submit" class="form-control btn btn-primary" value="Thêm">
+				<label>Birthday</label>
+				<input type="date" required name="birthday" class="form-control">
 			</div>
 			<div class="form-group">
-				<a href="{{asset('users/')}}"><input type="button" name="sub" class="form-control btn btn-danger" placeholder="" value="Hủy bỏ" ></a>
+				<label>Gender</label>
+				<select name="gender" required >
+					<option value={{1}}>Male</option>
+					<option value={{2}}>Female</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<input type="submit" class="form-control btn btn-primary" value="Create">
+			</div>
+			<div class="form-group">
+				<a href="{{asset('users/')}}"><input type="button" name="sub" class="form-control btn btn-danger" value="Cancle" ></a>
 			</div>
 		</form>
 	</div>	

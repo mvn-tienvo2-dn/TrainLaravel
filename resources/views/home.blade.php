@@ -16,7 +16,9 @@
 		 <th>ID</th>
  		 <th>Name</th>  
  		 <th>Email</th>  
- 		 <th>Created at</th>    
+ 		 <th>Created at</th>
+ 		 <th>Gender</th>
+ 		 <th>Grade</th>    
          <th>Action</th>  
  		 <th>Action</th> 
 		</tr>
@@ -25,11 +27,29 @@
  		@foreach($userslist as $user)
  		<tr>
  			<td>{{$user->id}}</td>
- 			<td>{{$user->name}}</td>
+ 			<td><a href="{{route('users.show',['user'=>$user->id])}}">{{$user->name}}</a></td>
  			<td>{{$user->email}}</td>
  			<td>{{$user->created_at}}</td>
-  			<td><a href="{{asset('users/update/'.$user->id)}}"><button type="button" class="btn btn-warning" onclick="return confirm('Bạn có muốn sửa ?');">Edit</button></a></td>
-  			<td><a href="{{asset('users/delete/'.$user->id)}}"><button type="button" class="btn btn-danger" onclick="return confirm('Bạn có muốn xóa ?');">Delete</button></a></td>	
+ 			<td>{{$user->gender_name}}</td>
+ 			<td>{{$user->grade}}</td>
+  			<td>
+  				<form action="{{ route('users.edit', ['user'=>$user->id]) }}" method="POST">
+  					@csrf
+  					@method('GET')
+  					<button type="submit" class="btn btn-warning"
+  					onclick="return confirm('Are you want to Edit ?');">Edit
+  				</button>
+  			    </form>
+  			</td>
+  			<td>
+  				<form action="{{asset('users/'.$user->id)}}" method="POST">
+  					@csrf
+  					@method('DELETE')
+  					<button type="submit" class="btn btn-danger"
+  					onclick="return confirm('Are you want to Delete ?');" id="btndelete">Delete
+  				</button>
+  			    </form>
+  			</td>>	
  		</tr>
     @endforeach
  	</tbody>

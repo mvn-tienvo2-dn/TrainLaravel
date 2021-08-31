@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\User;
+use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -58,7 +59,8 @@ class UsersController extends Controller
      */
     public function show($id)
     {
-        //
+        $data['postlist']=User::find($id)->posts()->get();
+        return view('show-posts',$data);
     }
 
     /**
@@ -69,7 +71,8 @@ class UsersController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data['user']=User::find($id);
+        return view('edit-user',$data);
     }
 
     /**
@@ -81,7 +84,20 @@ class UsersController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $validator = Validator::make($request->all(), [
+            'email' =>'email:rfc,dns',
+        ]);
+
+        if ($validator->fails()) {
+            return redirect(route('users.edit',['user'=>$id]))->withErrors($validator,'email');       
+        }
+
+        $data=$request->except(['_method']);
+        $data['password']=bcrypt($request->password);
+        $data['_token']=$request->_token;
+        //Update User
+        User::where('id',$id)->update($data);
+        return redirect('users/')->with('success','Update User Success');
     }
 
     /**
@@ -91,7 +107,8 @@ class UsersController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
-    {
-        //
+    {   
+        User::destroy($id);
+        return redirect('users/')->with(['success'=>'Delete User Success']);
     }
 }
